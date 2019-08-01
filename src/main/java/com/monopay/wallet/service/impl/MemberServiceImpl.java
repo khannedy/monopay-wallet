@@ -86,7 +86,7 @@ public class MemberServiceImpl implements MemberService {
       .email(member.getEmail())
       .balance(GetMemberWebResponse.Balance.builder()
         .balance(balance.getBalance())
-        .point(balance.getBalance())
+        .point(balance.getPoint())
         .build())
       .build();
   }
