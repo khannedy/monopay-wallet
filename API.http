@@ -1,0 +1,105 @@
+# Authenticate
+POST http://localhost:8080/v1/auth/authenticate
+Accept: application/json
+API-KEY: SECRET
+
+###
+# Create Member
+POST http://localhost:8080/v1/members
+Accept: application/json
+Content-Type: application/json
+API-KEY: SECRET
+
+{
+  "email": "member1@gmail.com",
+  "phone": "0899999999",
+  "name": "Joko Moro"
+}
+
+###
+# Update Member
+PUT http://localhost:8080/v1/members/ad9cab9b-436c-49d0-bc57-31da89fb3ac5
+Accept: application/json
+Content-Type: application/json
+API-KEY: SECRET
+
+{
+  "name": "Joko Heru",
+  "verified": true
+}
+
+###
+# Get Member
+GET http://localhost:8080/v1/members/ad9cab9b-436c-49d0-bc57-31da89fb3ac5
+Accept: application/json
+API-KEY: SECRET
+
+###
+
+# TopUp Transaction
+POST http://localhost:8080/v1/transactions/topup
+Accept: application/json
+Content-Type: application/json
+API-KEY: SECRET
+
+{
+  "memberId": "ad9cab9b-436c-49d0-bc57-31da89fb3ac5",
+  "total": 1000000
+}
+
+###
+
+# Point Transaction
+POST http://localhost:8080/v1/transactions/point
+Accept: application/json
+Content-Type: application/json
+API-KEY: SECRET
+
+{
+  "memberId": "ad9cab9b-436c-49d0-bc57-31da89fb3ac5",
+  "total": 5000000
+}
+
+###
+
+# Purchase Transaction
+POST http://localhost:8080/v1/transactions/purchase
+Accept: application/json
+Content-Type: application/json
+API-KEY: SECRET
+
+{
+  "memberId": "ad9cab9b-436c-49d0-bc57-31da89fb3ac5",
+  "total": 100000
+}
+
+###
+
+# Transfer Transaction
+POST http://localhost:8080/v1/transactions/transfer
+Accept: application/json
+Content-Type: application/json
+API-KEY: SECRET
+
+{
+  "memberId": "ad9cab9b-436c-49d0-bc57-31da89fb3ac5",
+  "total": 1000000,
+  "bank": "BCA",
+  "bankAccountNumber": "024124124"
+}
+
+###
+
+# List Transactions
+GET http://localhost:8080/v1/transactions/ad9cab9b-436c-49d0-bc57-31da89fb3ac5
+Accept: application/json
+API-KEY: SECRET
+
+###
+
+# List Transfer
+GET http://localhost:8080/v1/transfers/ad9cab9b-436c-49d0-bc57-31da89fb3ac5
+Accept: application/json
+API-KEY: SECRET
+
+###

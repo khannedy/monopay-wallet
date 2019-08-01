@@ -1,0 +1,1 @@
+package com.example.monolith.model;
