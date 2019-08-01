@@ -8,10 +8,11 @@
     <version>2.1.6.RELEASE</version>
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
-  <groupId>software-architecture</groupId>
-  <artifactId>workshop-monolith</artifactId>
+  <groupId>com.monopay</groupId>
+  <artifactId>monopay-wallet</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>workshop-monolith</name>
+
+  <name>monopay-wallet</name>
   <description>Demo project for Monolith Project</description>
 
   <properties>
