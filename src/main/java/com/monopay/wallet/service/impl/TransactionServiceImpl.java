@@ -1,15 +1,12 @@
 package com.monopay.wallet.service.impl;
 
-import com.example.monolith.entity.*;
-import com.example.monolith.model.service.*;
-import com.example.monolith.model.web.response.*;
+import com.monopay.wallet.entity.*;
+import com.monopay.wallet.model.service.*;
+import com.monopay.wallet.model.web.response.*;
 import com.monopay.wallet.repository.BalanceRepository;
 import com.monopay.wallet.repository.TransactionRepository;
 import com.monopay.wallet.repository.TransferRepository;
 import com.monopay.wallet.service.TransactionService;
-import com.monopay.wallet.entity.*;
-import com.monopay.wallet.model.service.*;
-import com.monopay.wallet.model.web.response.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;

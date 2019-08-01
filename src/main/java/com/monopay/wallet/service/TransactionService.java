@@ -1,7 +1,5 @@
 package com.monopay.wallet.service;
 
-import com.example.monolith.model.service.*;
-import com.example.monolith.model.web.response.*;
 import com.monopay.wallet.model.service.*;
 import com.monopay.wallet.model.web.response.*;
 

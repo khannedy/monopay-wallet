@@ -1,16 +1,14 @@
 package com.monopay.wallet.controller;
 
 import com.monopay.wallet.entity.Authentication;
-import com.example.monolith.model.service.*;
+import com.monopay.wallet.model.service.*;
 import com.monopay.wallet.model.web.WebResponse;
 import com.monopay.wallet.model.web.request.PointTransactionWebRequest;
 import com.monopay.wallet.model.web.request.PurchaseTransactionWebRequest;
 import com.monopay.wallet.model.web.request.TopUpTransactionWebRequest;
 import com.monopay.wallet.model.web.request.TransferTransactionWebRequest;
-import com.example.monolith.model.web.response.*;
-import com.monopay.wallet.service.TransactionService;
-import com.monopay.wallet.model.service.*;
 import com.monopay.wallet.model.web.response.*;
+import com.monopay.wallet.service.TransactionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
